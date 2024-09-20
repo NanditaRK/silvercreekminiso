@@ -1,30 +1,39 @@
 import React, { useEffect, useState } from 'react';
 
 const Home = () => {
-    // Set initial countdown duration (in seconds)
-    const initialDuration = 9853200;
-    const [remainingTime, setRemainingTime] = useState(initialDuration);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setRemainingTime(prevTime => {
-          if (prevTime <= 0) {
-            clearInterval(interval);
-            return 0; // Prevent negative time
-          }
-          return prevTime - 1; // Decrement time by 1 second
-        });
-      }, 1000);
-  
-      return () => clearInterval(interval); // Clean up on component unmount
-    }, []);
-  
-    // Calculate days, hours, minutes, and seconds
-    const days = String(Math.floor(remainingTime / (24 * 60 * 60))).padStart(2, '0');
-    const hours = String(Math.floor((remainingTime % (24 * 60 * 60)) / (60 * 60))).padStart(2, '0');
-    const minutes = String(Math.floor((remainingTime % (60 * 60)) / 60)).padStart(2, '0');
-    const seconds = String(remainingTime % 60).padStart(2, '0');
-    return (
+  const initialDuration = 9853200; // 114 days in seconds
+  const [remainingTime, setRemainingTime] = useState(() => {
+    // Retrieve time from local storage, or use initialDuration
+    const savedTime = localStorage.getItem('remainingTime');
+    return savedTime ? Math.max(0, Number(savedTime)) : initialDuration;
+  });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRemainingTime(prevTime => {
+        if (prevTime <= 0) {
+          clearInterval(interval);
+          return 0; // Prevent negative time
+        }
+        const newTime = prevTime - 1;
+        localStorage.setItem('remainingTime', newTime); // Save remaining time to local storage
+        return newTime; // Decrement time by 1 second
+      });
+    }, 1000);
+
+    return () => {
+      clearInterval(interval); // Clean up on component unmount
+      localStorage.setItem('remainingTime', remainingTime); // Save the current remaining time
+    };
+  }, []);
+
+  // Calculate days, hours, minutes, and seconds
+  const days = String(Math.floor(remainingTime / (24 * 60 * 60))).padStart(2, '0');
+  const hours = String(Math.floor((remainingTime % (24 * 60 * 60)) / (60 * 60))).padStart(2, '0');
+  const minutes = String(Math.floor((remainingTime % (60 * 60)) / 60)).padStart(2, '0');
+  const seconds = String(remainingTime % 60).padStart(2, '0');
+
+  return (
     <div>
       <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
@@ -64,6 +73,6 @@ const Home = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Home;
