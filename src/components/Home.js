@@ -1,37 +1,30 @@
 import React, { useEffect, useState } from 'react';
 
 const Home = () => {
-  const initialDuration = 9853200; // 114 days in seconds
-  const [remainingTime, setRemainingTime] = useState(() => {
-    // Retrieve time from local storage, or use initialDuration
-    const savedTime = localStorage.getItem('remainingTime');
-    return savedTime ? Math.max(0, Number(savedTime)) : initialDuration;
-  });
+  // Set the end time directly in ISO format (8 AM PST on January 11, 2025)
+  const endTime = new Date('2025-01-11T16:00:00Z').getTime(); // UTC time equivalent
+  const [remainingTime, setRemainingTime] = useState(endTime - Date.now());
 
   useEffect(() => {
     const interval = setInterval(() => {
       setRemainingTime(prevTime => {
-        if (prevTime <= 0) {
+        const newTime = endTime - Date.now();
+        if (newTime <= 0) {
           clearInterval(interval);
-          return 0; // Prevent negative time
+          return 0; // Stop timer at zero
         }
-        const newTime = prevTime - 1;
-        localStorage.setItem('remainingTime', newTime); // Save remaining time to local storage
-        return newTime; // Decrement time by 1 second
+        return newTime; // Update remaining time
       });
     }, 1000);
 
-    return () => {
-      clearInterval(interval); // Clean up on component unmount
-      localStorage.setItem('remainingTime', remainingTime); // Save the current remaining time
-    };
-  }, []);
+    return () => clearInterval(interval); // Clean up on component unmount
+  }, [endTime]);
 
   // Calculate days, hours, minutes, and seconds
-  const days = String(Math.floor(remainingTime / (24 * 60 * 60))).padStart(2, '0');
-  const hours = String(Math.floor((remainingTime % (24 * 60 * 60)) / (60 * 60))).padStart(2, '0');
-  const minutes = String(Math.floor((remainingTime % (60 * 60)) / 60)).padStart(2, '0');
-  const seconds = String(remainingTime % 60).padStart(2, '0');
+  const days = String(Math.floor(remainingTime / (24 * 60 * 60 * 1000))).padStart(2, '0');
+  const hours = String(Math.floor((remainingTime % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000))).padStart(2, '0');
+  const minutes = String(Math.floor((remainingTime % (60 * 60 * 1000)) / (60 * 1000))).padStart(2, '0');
+  const seconds = String(Math.floor((remainingTime % (60 * 1000)) / 1000)).padStart(2, '0');
 
   return (
     <div>
