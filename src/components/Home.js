@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-const Home = () => {
-  // Set the end time directly in ISO format (8 AM PST on January 11, 2025)
-  const endTime = new Date('2025-01-11T16:00:00Z').getTime(); // UTC time equivalent
+const Home = ({ onLearnMoreClick }) => {
+  const endTime = new Date('2025-01-11T16:00:00Z').getTime();
   const [remainingTime, setRemainingTime] = useState(endTime - Date.now());
 
   useEffect(() => {
@@ -17,7 +16,7 @@ const Home = () => {
       });
     }, 1000);
 
-    return () => clearInterval(interval); // Clean up on component unmount
+    return () => clearInterval(interval);
   }, [endTime]);
 
   // Calculate days, hours, minutes, and seconds
@@ -39,9 +38,12 @@ const Home = () => {
                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
               </svg>
             </a>
-            <a href="#" className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+            <button 
+              onClick={onLearnMoreClick} 
+              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400"
+            >
               Learn more
-            </a>  
+            </button>
           </div>
         </div>
       </section>
