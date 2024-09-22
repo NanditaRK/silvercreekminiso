@@ -70,7 +70,7 @@ const About = React.forwardRef((props, ref) => {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Smarnita Prashanth</h2>
-              <p>Treasurer and Event Supervisor of </p>
+              <p>Treasurer and Event Supervisor of Ecology </p>
               <div className="card-actions justify-end">
                 <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
               </div>
@@ -83,7 +83,7 @@ const About = React.forwardRef((props, ref) => {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Reshma Sudhakar</h2>
-              <p>Secretary and Event Supervisor of </p>
+              <p>Secretary and Event Supervisor of Dynamic Planet</p>
               <div className="card-actions justify-end">
                 <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
               </div>
