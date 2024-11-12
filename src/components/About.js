@@ -31,7 +31,7 @@ const About = React.forwardRef((props, ref) => {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Nandita Raj Kumar</h2>
-              <p>Co-President and Event Supervisor of Wind Power (Written Portion)</p>
+              <p>Co-President and Event Supervisor of Anatomy and Physiology</p>
               <div className="card-actions justify-end">
                 <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
               </div>
