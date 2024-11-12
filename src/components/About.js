@@ -14,19 +14,19 @@ const About = React.forwardRef((props, ref) => {
           Silver Creek Mini SO will be hosted by the Silver Creek High School Science Olympiad Team. 
           Our goal is to inspire students to excel in science and engineering through hands-on experience and collaborative learning.
         </h3>
-    <div className='flex w-4/5 justify-around'>
+    <div className='flex mx-auto w-4/5 justify-around'>
             <a target="_blank" href="https://docs.google.com/document/d/1UFlr4cO9ld8uKjngHdAFryC_J0tjTopgJHBu_5R8sbE/edit?usp=sharing"><button
-              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+              className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-green-900 hover:bg-green-800 focus:ring-4 focus:ring-gray-400">
               Event Slate
             </button></a>
 
                 <a target="_blank" href="https://docs.google.com/document/d/19V3faClVTWK3EYqDy0qyD7lq1KueVi0fYEKjhogz1o4/edit?usp=sharing"><button
-              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+              className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-green-900 hover:bg-green-800 focus:ring-4 focus:ring-gray-400">
               Event Modifications
             </button></a>
 
                 <a target="_blank" href="https://docs.google.com/document/d/1H9b-vdSyzMCgi9wCY1aEAEWObXilNCdbh2apjX-02k8/edit?usp=sharing"><button
-              className="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+              className="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-green-900 hover:bg-green-800 focus:ring-4 focus:ring-gray-400">
               Invitational Updates
             </button></a>
 
