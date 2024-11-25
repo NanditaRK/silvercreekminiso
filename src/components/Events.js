@@ -9,27 +9,33 @@ const Events = () => {
     <ul className='list-disc flex flex-wrap justify-around text-left'>
         <div className='m-4' >
         <li>Anatomy & Physiology</li>
+        <li>Anything Goes (Trial)</li>
         <li>Codebusters</li>
         <li>Crime Busters</li>
         <li>Disease Detective</li>
         <li>Dynamic Planet</li>
-        <li>Ecology</li>
+        
         </div>
         <div className='m-4'>
+        <li>Ecology</li>
         <li>Entomology</li>
         <li>Experimental Design</li>
         <li>Fossils</li>
         <li>Meteorology</li>
         <li>Metric Master</li>
-        <li>Wind Power (Written Portion) </li>
+        
 
         </div>
         <div className='m-4'>
+        <li>Microbe Mission (Written Portion) </li>
+  
         <li>Optics (Written Portion) </li>
         <li>Potions and Poisons</li>
         <li>Reach for the Stars</li>
         <li>Road Scholar</li>
-        <li>Write It Cad It</li>
+        
+    <li>Wind Power (Written Portion) </li>
+    <li>Write It Do It</li>
 
         </div>
         
