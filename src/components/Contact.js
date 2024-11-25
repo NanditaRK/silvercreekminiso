@@ -13,7 +13,7 @@ const Contact = ({ onOurTeamClick }) => {
       question: "I have a question regarding a specific event.",
       answer: (
         <p className="mb-2 text-gray-500 dark:text-gray-400">
-          Contact the specific Event Supervisor that can be found in the <button className='text-green-700 underline' onClick={onOurTeamClick}>Our Team</button> section.
+          Contact the specific Event Supervisor using the chat feature in Scilympiad to the corresponding Event Supervisor that can be found in the <button className='text-green-700 underline' onClick={onOurTeamClick}>Our Team</button> section.
         </p>
       ),
     },
