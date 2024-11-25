@@ -49,9 +49,7 @@ const About = React.forwardRef((props, ref) => {
             <div className="card-body">
               <h2 className="card-title">Nandita Raj Kumar</h2>
               <p>Co-President and Event Supervisor of Anatomy and Physiology</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
-              </div>
+              
             </div>
           </div>
 
@@ -62,9 +60,7 @@ const About = React.forwardRef((props, ref) => {
             <div className="card-body">
               <h2 className="card-title">Amala Valiveti</h2>
               <p>Co-President and Event Supervisor of Disease Detectives</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
-              </div>
+              
             </div>
           </div>
 
@@ -75,24 +71,11 @@ const About = React.forwardRef((props, ref) => {
             <div className="card-body">
               <h2 className="card-title">Anaya Jain</h2>
               <p>Vice President and Event Supervisor of Crime Busters</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
-              </div>
+              
             </div>
           </div>
 
-          <div className="card m-4 bg-white w-96 shadow-2xl">
-            <figure>
-              <img className='' src={smarnita} alt="Smarnita Prashanth" />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Smarnita Prashanth</h2>
-              <p>Treasurer and Event Supervisor of Ecology </p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
-              </div>
-            </div>
-          </div>
+     
 
           <div className="card m-4 bg-white w-96 shadow-2xl">
             <figure>
@@ -101,9 +84,7 @@ const About = React.forwardRef((props, ref) => {
             <div className="card-body">
               <h2 className="card-title">Reshma Sudhakar</h2>
               <p>Secretary and Event Supervisor of Dynamic Planet</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary bg-green-700 text-white hover:bg-green-800 border border-none">Message</button>
-              </div>
+              
             </div>
           </div>
 
