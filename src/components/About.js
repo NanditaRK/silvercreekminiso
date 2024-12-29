@@ -2,7 +2,7 @@ import React from 'react';
 import nandita from "../assets/pfp/nandita_rajkumar.png";
 import amala from "../assets/pfp/amala_valiveti.png";
 import anaya from "../assets/pfp/anaya_jain.png";
-import smarnita from "../assets/pfp/smarnita_prashanth.png";
+import nishanth from "../assets/pfp/nishanth_tharakan.png"
 import reshma from "../assets/pfp/reshma_sudhakar.png";
 
 const About = React.forwardRef((props, ref) => {
@@ -23,6 +23,11 @@ const About = React.forwardRef((props, ref) => {
                 <a target="_blank" href="https://docs.google.com/document/d/19V3faClVTWK3EYqDy0qyD7lq1KueVi0fYEKjhogz1o4/edit?usp=sharing"><button
               className="m-2 inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-green-900 hover:bg-green-800 focus:ring-4 focus:ring-gray-400">
               Event Modifications
+            </button></a>
+
+            <a target="_blank" href="https://docs.google.com/document/d/1mwsKesGA9Lp6KROKEo8HeRsTWbYfoBgiVvFw0TcCt7w/edit?usp=sharing"><button
+              className="m-2 inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-green-900 hover:bg-green-800 focus:ring-4 focus:ring-gray-400">
+              Timeline
             </button></a>
 
                 <a target="_blank" href="https://docs.google.com/document/d/1H9b-vdSyzMCgi9wCY1aEAEWObXilNCdbh2apjX-02k8/edit?usp=sharing"><button
@@ -49,6 +54,17 @@ const About = React.forwardRef((props, ref) => {
             <div className="card-body">
               <h2 className="card-title">Nandita Raj Kumar</h2>
               <p>Co-President and Event Supervisor of Anatomy and Physiology</p>
+              
+            </div>
+          </div>
+
+          <div className="card m-4 bg-white w-96 shadow-2xl">
+            <figure>
+              <img className='' src={nishanth} alt="Nishanth Tharakan" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Nishanth Tharakan</h2>
+              <p> Event Supervisor of Codebusters and Applied Mathematics Major at UCLA</p>
               
             </div>
           </div>
