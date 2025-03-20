@@ -18,6 +18,7 @@ const About = React.forwardRef((props, ref) => {
           Silver Creek Mini SO will be hosted by the Silver Creek High School Science Olympiad Team. 
           Our goal is to inspire students to excel in science and engineering through hands-on experience and collaborative learning.
         </h3>
+        
     <div className='flex mx-auto w-4/5 justify-center'>
             <a target="_blank" href="https://docs.google.com/document/d/1UFlr4cO9ld8uKjngHdAFryC_J0tjTopgJHBu_5R8sbE/edit?usp=sharing"><button
               className="m-2 inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg bg-green-900 hover:bg-green-800 focus:ring-4 focus:ring-gray-400">
@@ -40,12 +41,17 @@ const About = React.forwardRef((props, ref) => {
             </button></a>
 
                 </div>
+                
       </section>
       <section>
       <h1 className=' text-3xl p-8 font-semibold text-center text-green-900 md:text-4xl lg:text-5xl'>Mission</h1>
     <h3 className='text-xl p-8 w-3/4 mx-auto text-gray-900 md:text-2xl lg:text-2xl'> <span className='text-4xl text-green-700'>»</span> <bold className='font-extrabold'>High Quality Tests:</bold> We want to ensure that all teams and events recieve testing material that will appropriately prepare them for competitions in the future. To assure this, we will have an event supervisor per each event to overseer all processes of the invitational from writing to grading. </h3>
     <h3 className='text-xl p-8 w-3/4 mx-auto text-gray-900 md:text-2xl lg:text-2xl'> <span className='text-4xl text-green-700'>»</span> <bold className='font-extrabold'>Smooth Experience:</bold> Through frequent communication between our team and the competing schools, we hope to minimize any problems that may impede the ease of competing in our invitational. We hope to make it as easy as possible for competitors to understand the logistics of the invitational so they can soley focus on performing well on their events.  </h3>
       </section>
+      <h1 className=' text-3xl p-8 font-semibold text-center text-green-900 md:text-4xl lg:text-5xl'>2024 - 2025 Silver Creek Mini SO Award Ceremony</h1>
+                <div className='flex justify-center'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qsoTe2aV0hY?si=e4IMV-nWki_ydedu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
 
       <section ref={ref} id="our-team" className='my-12 bg-white'>
         <h1 className='text-3xl p-8 font-semibold text-center text-green-900 md:text-4xl lg:text-5xl'>Our Team</h1>
@@ -57,7 +63,7 @@ const About = React.forwardRef((props, ref) => {
             </figure>
             <div className="card-body">
               <h2 className="card-title">Nandita Raj Kumar</h2>
-              <p>Co-President and Event Supervisor of Anatomy and Physiology</p>
+              <p>Co-President and Event Supervisor of Anatomy and Physiology, Experimental Design, Write It Do It, Wind Power, and Ecology</p>
               
             </div>
           </div>
