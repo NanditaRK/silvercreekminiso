@@ -4,6 +4,10 @@ import amala from "../assets/pfp/amala_valiveti.png";
 import anaya from "../assets/pfp/anaya_jain.png";
 import nishanth from "../assets/pfp/nishanth_tharakan.png"
 import reshma from "../assets/pfp/reshma_sudhakar.png";
+import kelvin from "../assets/pfp/kelvin_lee.png"
+import zakaria from "../assets/pfp/zakaria_aissous.jpg"
+import kenny from "../assets/pfp/kenny_tran.png"
+import rishi from "../assets/pfp/rishi_duddi.png"
 
 const About = React.forwardRef((props, ref) => {
   return (
@@ -100,6 +104,50 @@ const About = React.forwardRef((props, ref) => {
             <div className="card-body">
               <h2 className="card-title">Reshma Sudhakar</h2>
               <p>Secretary and Event Supervisor of Dynamic Planet</p>
+              
+            </div>
+          </div>
+
+          <div className="card m-4 bg-white w-96 shadow-2xl">
+            <figure>
+              <img className='' src={kelvin} alt="Kelvin Lee" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Kelvin Lee</h2>
+              <p>Event Supervisor of Entomology</p>
+              
+            </div>
+          </div>
+
+          <div className="card m-4 bg-white w-96 shadow-2xl">
+            <figure>
+              <img className='' src={zakaria} alt="Zakaria Aissous" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Zakaria Aissous</h2>
+              <p>Event Supervisor of Optics and Meteorology</p>
+              
+            </div>
+          </div>
+
+          <div className="card m-4 bg-white w-96 shadow-2xl">
+            <figure>
+              <img className='' src={kenny} alt="Kenny Tran" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Kenny Tran</h2>
+              <p>Event Supervisor of Reach for the Stars</p>
+              
+            </div>
+          </div>
+
+          <div className="card m-4 bg-white w-96 shadow-2xl">
+            <figure>
+              <img className='' src={rishi} alt="Rishi Duddi" />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title">Rishi Duddi</h2>
+              <p>Event Supervisor of Ecology and Road Scholars</p>
               
             </div>
           </div>
